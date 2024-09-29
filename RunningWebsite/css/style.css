@@ -1,0 +1,244 @@
+/*GENERAL STYLING*/
+.homeintro {
+    text-align: center;
+}
+
+
+/*HEADER STYLING*/
+
+.navbar {
+    display: flex;                      /* Flex layout for alignment */
+    justify-content: space-between;     /* Space between logo and menu */
+    align-items: center;                /* Center vertically */
+    padding: 15px 20px;                 /* Padding around the navbar */
+    background-color: #003366;          /* Dark blue background */
+    color: white;                       /* White text color */
+}
+
+/* Logo */
+.logo {
+    max-height: 50px;                  /* Set a max height for the logo */
+}
+
+/* Navigation Menu */
+.headermenu {
+    list-style: none;                   /* Remove bullet points */
+    padding: 0;                         /* No padding */
+    margin: 0;                          /* No margin */
+    display: flex;                      /* Horizontal layout for menu items */
+    gap: 20px;                          /* Space between menu items */
+}
+
+/* Menu Items */
+.headermenu li {
+    margin: 0;                         /* No margin */
+}
+
+/* Menu Links */
+.headermenu a {
+    color: white;                       /* White text for links */
+    text-decoration: none;              /* No underline */
+    padding: 10px 15px;                /* Padding around links */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+/* Hover Effect for Links */
+.headermenu a:hover {
+    background-color: #555;            /* Darker background on hover */
+    border-radius: 5px;                /* Rounded corners for hover effect */
+}
+
+/* FOOTER STYLING*/
+
+.footer {
+    display: flex;                        /* Flex layout for sections */
+    padding: 20px;                       /* Padding for spacing */
+    background-color: #003366;           /* Dark blue background */
+    color: white;                         /* White text color */
+    justify-content: space-between;       /* Space between sections */
+    flex-wrap: wrap;                     /* Wrap sections on smaller screens */
+}
+
+/* Styling for each section */
+.footer > section {
+    flex: 1;                             /* Allow sections to grow */
+    margin: 0 20px;                      /* Margin between sections */
+}
+
+/* Remove margin for the last section */
+.footer section:last-child {
+    margin-right: 0;                     /* No margin for last section */
+}
+
+/* Header Styling */
+.footer h4 {
+    font-size: 1.5em;                   /* Larger font for headers */
+    margin-bottom: 5px;                /* Space below the header */
+}
+
+/* Paragraph Styling */
+.footer p {
+    font-size: 0.8em;
+    margin: 5px 0;                      /* Space between paragraphs */
+}
+
+/* Link Styling */
+.footer a {
+    color: white;                       /* Keep links white */
+    text-decoration: none;              /* Remove underline */
+    transition: color 0.3s ease;       /* Smooth transition for color change */
+}
+
+/* Hover Effect for Links */
+.footer a:hover {
+    text-decoration: underline;         /* Underline on hover */
+    color: #ffcc00;                    /* Change color on hover */
+}
+
+/* Vertical Menu Items */
+.footer .footermenu {
+    list-style: none;                   /* Remove bullet points */
+    padding: 0;                         /* No padding */
+    margin: 0;                          /* No margin */
+}
+
+/* Individual Menu Item Styling */
+.footer .footermenu li {
+    margin: 2px 0;                     /* Space between items */
+}
+
+/* Ensure Menu Items are Block Elements */
+.footer .footermenu li a {
+    display: block;                     /* Full width links */
+}
+
+/* Copyright Notice */
+.footer p:last-of-type {
+    text-align: center;                 /* Center the copyright text */
+    width: 100%;                        /* Full width */
+    margin-top: 20px;                  /* Space above copyright */
+    font-size: 0.9em;                   /* Smaller font size for copyright */
+    color: rgba(255, 255, 255, 0.7);   /* Lighter color for copyright */
+}
+
+.footer .footermenu {
+    list-style: none;                   /* Remove bullet points */
+    padding: 0;                         /* No padding */
+    margin: 0;                          /* No margin */
+    display: flex;                      /* Keep flex layout */
+    flex-direction: column;             /* Stack items vertically */
+}
+
+/* Individual Menu Item Styling */
+.footer .footermenu li {
+    margin: 5px 0;                     /* Space between items */
+}
+
+/* Ensure Menu Items are Block Elements */
+.footer .footermenu li a {
+    display: block;                     /* Full width links */
+    padding: 5px 0;                    /* Padding for links */
+    color: white;                       /* Link color */
+    text-decoration: none;              /* No underline */
+    transition: color 0.3s ease;       /* Smooth transition */
+}
+
+.footer .footermenu li a:hover {
+    text-decoration: underline;         /* Underline on hover */
+    color: #ffcc00;                    /* Change color on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;         /* Stack sections vertically */
+        align-items: center;            /* Center align items */
+    }
+    
+    .footer > section {
+        margin-bottom: 20px;            /* Space between sections */
+        margin-right: 0;                /* No right margin on mobile */
+    }
+}
+
+/* Page 1 - Running Groups */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0;
+}
+
+.Introtext {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* styling of the group, competition and routes boxes */
+
+.group {
+    border: 2px solid #ddd;         /* Border around the box */
+    padding: 30px;                  /* Padding inside the box */
+    margin: 0 auto 50px;           /* Center the box horizontally and add space below */
+    border-radius: 12px;            /* Slightly larger rounded corners */
+    background-color: #f5f5f5;      /* Light gray background */
+    display: flex;                  /* Flexbox to position text and image side-by-side */
+    justify-content: space-between; /* Space between text and image */
+    align-items: flex-start;        /* Align items to the top */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    max-width: 900px;               /* Maximum width of the box */
+}
+
+/* Left Side: Text content */
+.text-content {
+    flex: 1;                        /* Takes up available space on the left */
+    padding-right: 20px;           /* Adds space between text and image */
+}
+
+.text-content h3 {
+    font-size: 1.5em;                 /* Large font size for the heading */
+    margin-bottom: 20px;            /* Adds space between the heading and the list */
+    font-weight: bold;
+    font-style: italic;             /* Italicized heading */
+}
+
+.text-content ul {
+    list-style-type: disc;          /* Default bullet points */
+    padding-left: 20px;             /* Adds space for the bullets */
+    margin: 0;
+}
+
+.text-content ul li {
+    font-size: 1.2em;               /* Larger font size for list items */
+    padding: 8px 0;                 /* Adds space between each item */
+    line-height: 1.5;
+}
+
+/* Right Side: Image content */
+figure {
+    margin: 0;                      /* No margin around figure */
+    flex-shrink: 0;                /* Prevents the image from shrinking */
+    max-width: 400px;              /* Max width for the image */
+    height: auto;                  /* Maintain the height automatically */
+}
+
+figure img {
+    width: 100%;                    /* Make the image fill the right side */
+    height: auto;                   /* Maintain the image's aspect ratio */
+    border-radius: 8px;             /* Slight rounding for the image */
+    border: 1px solid #ddd;         /* Light border around the image */
+}
+
+/* Optional: Align caption text if needed */
+figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+}
