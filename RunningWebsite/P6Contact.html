@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="img/faviconrocket.png">
+</head>
+
+<body>
+    <header>
+        <!--Insert Logo-->
+        <nav class="navbar">
+            <img src="logo.png" alt="Logo" class="logo">
+            <ul class="headermenu">
+                <li><a href="P2RunningGroups.html">Groups</a></li>
+                <li><a href="P3RunningCompetitions.html">Competitions</a></li>
+                <li><a href="P4RunningRoutes.html">New Routes</a></li>
+                <li><a href="P5RunningTips.html">Tipps</a></li>
+                <li><a href="P6Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action=
+        "process.php" method="POST">
+        <!-- 'action' attribute specifies the URL to process the form data -->
+        <!-- 'method' attribute specifies how data is sent; 'POST' is common -->
+        <label for="name">Name:</label>
+        <input type=
+        "text" id="name" name="name" placeholder=
+        "Your name" required>
+        <!-- 'label' associates with 'input’ id using 'for' attribute, 'name' for server
+        access,'required' enforces input -->
+        <label for=
+        "message">Message:</label>
+        <textarea id=
+        "message" name=
+        "message" rows="4" cols="50" placeholder=
+        "Your message">
+        </textarea>
+        <!-- 'textarea' for multi-line text input; 'rows' and 'cols' set dimensions -->
+        <input type=
+        "submit" value=
+        "Submit">
+        <!-- 'input' with 'type="submit"' creates a submit button -->
+        </form>
+
+        <section class="Introtext">
+            <h2>Visit our other pages</h2>
+            <p>Interested in more? To get informed about running competitions <a href="P3RunningCompetitions.html" class="link-highlight">click here</a>. If you need Tips and Tricks to improve your running visit our <a href="P5RunningTips.html" class="link-highlight">Tips and Tricks site</a>.
+            Looking for new running routes? We have a bunch of different routes, no matter if you are a beginner or intermediate runner on our <a href="P4RunningRoutes.html" class="link-highlight">Running Routes site</a>.
+            If you want to find people with similar speed and distance check out our <a href="P2RunningGroups.html" class="link-highlight">Running groups site</a>!
+            Visit our <a href="P1Homepage.html" class="link-highlight">homepage</a> for a better overview or contact us <a href="P6Contact.html" class="link-highlight">here</a> if you have questions or inspirations.
+            </p>
+        </section>
+
+    </main>
+    
+    <footer class="footer"></footer>
+        <section class="contact">
+            <h4>Contact Us</h4>
+            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+        </section>
+    
+        <section class="links">
+            <h4>Useful Links</h4>
+            <ul class="footermenu">
+                <li><a href="P1Homepage.html">Homepage</a></li>
+                <li><a href="P2RunningGroups.html">Groups</a></li>
+                <li><a href="P3RunningCompetitions.html">Competitions</a></li>
+                <li><a href="P4RunningRoutes.html">New Routes</a></li>
+                <li><a href="P5RunningTips.html">Tips</a></li>
+                <li><a href="P6Contact.html">Contact</a></li>
+            </ul>
+        </section>
+    
+        <section class="legal">
+            <h4>Legal</h4>
+            <ul class="footermenu">
+                <li><a href="#">Imprint</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </section>
+    
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
