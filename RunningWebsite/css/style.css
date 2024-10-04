@@ -11,157 +11,145 @@
 /*HEADER STYLING*/
 
 .navbar {
-    display: flex;                      /* Flex layout for alignment */
-    justify-content: space-between;     /* Space between logo and menu */
-    align-items: center;                /* Center vertically */
-    padding: 15px 20px;                 /* Padding around the navbar */
-    background-color: #003366;          /* Dark blue background */
-    color: white;                       /* White text color */
+    display: flex;                      
+    justify-content: space-between;     
+    align-items: center;                
+    padding: 15px 20px;                 
+    background-color: #003366;          
+    color: white;                       
 }
 
 /* Logo */
 .logo {
-    max-height: 50px;                  /* Set a max height for the logo */
+    max-height: 50px;                  
 }
 
 /* Navigation Menu */
 .headermenu {
-    list-style: none;                   /* Remove bullet points */
-    padding: 0;                         /* No padding */
-    margin: 0;                          /* No margin */
-    display: flex;                      /* Horizontal layout for menu items */
-    gap: 20px;                          /* Space between menu items */
+    list-style: none;                   
+    padding: 0;                         
+    margin: 0;                          
+    display: flex;                      
+    gap: 20px;                          
 }
 
-/* Menu Items */
 .headermenu li {
-    margin: 0;                         /* No margin */
+    margin: 0;                         
 }
 
-/* Menu Links */
 .headermenu a {
-    color: white;                       /* White text for links */
-    text-decoration: none;              /* No underline */
-    padding: 10px 15px;                /* Padding around links */
-    transition: background-color 0.3s; /* Smooth transition for hover */
+    color: white;                       
+    text-decoration: none;              
+    padding: 10px 15px;                
+    transition: background-color 0.3s; 
 }
 
-/* Hover Effect for Links */
 .headermenu a:hover {
-    background-color: #555;            /* Darker background on hover */
-    border-radius: 5px;                /* Rounded corners for hover effect */
+    background-color: #555;            
+    border-radius: 5px;   
+    cursor: pointer;             
 }
 
 /* FOOTER STYLING*/
 
 .footer {
-    display: flex;                        /* Flex layout for sections */
-    padding: 20px;                       /* Padding for spacing */
-    background-color: #003366;           /* Dark blue background */
-    color: white;                         /* White text color */
-    justify-content: space-between;       /* Space between sections */
-    flex-wrap: wrap;                     /* Wrap sections on smaller screens */
+    display: flex;                        
+    padding: 20px;                      
+    background-color: #003366;        
+    color: white;                     
+    justify-content: space-between;     
+    flex-wrap: wrap;               
 }
 
-/* Styling for each section */
 .footer > section {
-    flex: 1;                             /* Allow sections to grow */
-    margin: 0 20px;                      /* Margin between sections */
+    flex: 1;                          
+    margin: 0 20px;              
 }
 
-/* Remove margin for the last section */
 .footer section:last-child {
-    margin-right: 0;                     /* No margin for last section */
+    margin-right: 0;                
 }
 
-/* Header Styling */
 .footer h4 {
-    font-size: 1.5em;                   /* Larger font for headers */
-    margin-bottom: 5px;                /* Space below the header */
+    font-size: 1.5em;         
+    margin-bottom: 5px;            
 }
 
-/* Paragraph Styling */
 .footer p {
     font-size: 0.8em;
-    margin: 5px 0;                      /* Space between paragraphs */
+    margin: 5px 0;                  
 }
 
-/* Link Styling */
 .footer a {
-    color: white;                       /* Keep links white */
-    text-decoration: none;              /* Remove underline */
-    transition: color 0.3s ease;       /* Smooth transition for color change */
+    color: white;                    
+    text-decoration: none;            
+    transition: color 0.3s ease; 
+    cursor: pointer;    
 }
 
-/* Hover Effect for Links */
 .footer a:hover {
-    text-decoration: underline;         /* Underline on hover */
-    color: #ffcc00;                    /* Change color on hover */
+    text-decoration: underline;        
+    color: #ffcc00;                  
 }
 
-/* Vertical Menu Items */
 .footer .footermenu {
-    list-style: none;                   /* Remove bullet points */
-    padding: 0;                         /* No padding */
-    margin: 0;                          /* No margin */
+    list-style: none;                 
+    padding: 0;                      
+    margin: 0;                        
 }
 
-/* Individual Menu Item Styling */
 .footer .footermenu li {
-    margin: 2px 0;                     /* Space between items */
+    margin: 2px 0;                
 }
 
-/* Ensure Menu Items are Block Elements */
 .footer .footermenu li a {
-    display: block;                     /* Full width links */
+    display: block;                   
 }
 
 /* Copyright Notice */
 .footer p:last-of-type {
-    text-align: center;                 /* Center the copyright text */
-    width: 100%;                        /* Full width */
-    margin-top: 20px;                  /* Space above copyright */
-    font-size: 0.9em;                   /* Smaller font size for copyright */
-    color: rgba(255, 255, 255, 0.7);   /* Lighter color for copyright */
+    text-align: center;                
+    width: 100%;                     
+    margin-top: 20px;                 
+    font-size: 0.9em;                   
+    color: rgba(255, 255, 255, 0.7);  
 }
 
 .footer .footermenu {
-    list-style: none;                   /* Remove bullet points */
-    padding: 0;                         /* No padding */
-    margin: 0;                          /* No margin */
-    display: flex;                      /* Keep flex layout */
-    flex-direction: column;             /* Stack items vertically */
+    list-style: none;                
+    padding: 0;                       
+    margin: 0;                      
+    display: flex;                    
+    flex-direction: column;            
 }
 
-/* Individual Menu Item Styling */
 .footer .footermenu li {
-    margin: 5px 0;                     /* Space between items */
+    margin: 5px 0;                     
 }
 
-/* Ensure Menu Items are Block Elements */
 .footer .footermenu li a {
-    display: block;                     /* Full width links */
-    padding: 5px 0;                    /* Padding for links */
-    color: white;                       /* Link color */
-    text-decoration: none;              /* No underline */
-    transition: color 0.3s ease;       /* Smooth transition */
+    display: block;                  
+    padding: 5px 0;                  
+    color: white;                     
+    text-decoration: none;           
+    transition: color 0.3s ease;      
 }
 
 .footer .footermenu li a:hover {
-    text-decoration: underline;         /* Underline on hover */
-    color: #ffcc00;                    /* Change color on hover */
+    text-decoration: underline;      
+    color: #ffcc00;                  
 }
 
-/* Responsive Adjustments */
+/* Responsive Adjustments ?*/
 @media (max-width: 768px) {
     .footer {
-        flex-direction: column;         /* Stack sections vertically */
-        align-items: center;            /* Center align items */
+        flex-direction: column;     
+        align-items: center;          
     }
     
     .footer > section {
-        margin-bottom: 20px;            /* Space between sections */
-        margin-right: 0;                /* No right margin on mobile */
+        margin-bottom: 20px;          
+        margin-right: 0;                
     }
 }
 
@@ -187,62 +175,147 @@ body {
 /* styling of the group, competition and routes boxes */
 
 .group {
-    border: 2px solid #ddd;         /* Border around the box */
-    padding: 30px;                  /* Padding inside the box */
-    margin: 0 auto 50px;           /* Center the box horizontally and add space below */
-    border-radius: 12px;            /* Slightly larger rounded corners */
-    background-color: #f5f5f5;      /* Light gray background */
-    display: flex;                  /* Flexbox to position text and image side-by-side */
-    justify-content: space-between; /* Space between text and image */
-    align-items: flex-start;        /* Align items to the top */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Slight shadow */
-    max-width: 900px;               /* Maximum width of the box */
+    border: 2px solid #ddd;        
+    padding: 30px;                 
+    margin: 0 auto 50px;           
+    border-radius: 12px;            
+    background-color: #f5f5f5;      
+    display: flex;                  
+    justify-content: space-between; 
+    align-items: flex-start;        
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); 
+    max-width: 900px;               
 }
 
-/* Left Side: Text content */
 .text-content {
-    flex: 1;                        /* Takes up available space on the left */
-    padding-right: 20px;           /* Adds space between text and image */
+    flex: 1;                     
+    padding-right: 20px;           
 }
 
 .text-content h3 {
-    font-size: 1.5em;                 /* Large font size for the heading */
-    margin-bottom: 20px;            /* Adds space between the heading and the list */
+    font-size: 1.5em;             
+    margin-bottom: 20px;        
     font-weight: bold;
-    font-style: italic;             /* Italicized heading */
+    font-style: italic;         
 }
 
 .text-content ul {
-    list-style-type: disc;          /* Default bullet points */
-    padding-left: 20px;             /* Adds space for the bullets */
+    list-style-type: disc;         
+    padding-left: 20px;        
     margin: 0;
 }
 
 .text-content ul li {
-    font-size: 1.2em;               /* Larger font size for list items */
-    padding: 8px 0;                 /* Adds space between each item */
+    font-size: 1.2em;            
+    padding: 8px 0;               
     line-height: 1.5;
 }
 
-/* Right Side: Image content */
 figure {
-    margin: 0;                      /* No margin around figure */
-    flex-shrink: 0;                /* Prevents the image from shrinking */
-    max-width: 400px;              /* Max width for the image */
-    height: auto;                  /* Maintain the height automatically */
+    margin: 0;                    
+    flex-shrink: 0;               
+    max-width: 400px;           
+    height: auto;               
 }
 
 figure img {
-    width: 100%;                    /* Make the image fill the right side */
-    height: auto;                   /* Maintain the image's aspect ratio */
-    border-radius: 8px;             /* Slight rounding for the image */
-    border: 1px solid #ddd;         /* Light border around the image */
+    width: 100%;               
+    height: auto;                 
+    border-radius: 8px;         
+    border: 1px solid #ddd;       
 }
 
-/* Optional: Align caption text if needed */
 figcaption {
     text-align: center;
     font-size: 0.9em;
     color: #666;
     margin-top: 10px;
+}
+
+/* STYLING "DROPDOWN" RUNNING TIPS (RUNNING BENEFITS) */
+/* General styling for the section */
+.unfold-section {
+    max-width: 70%;               /* Increased width for larger box */
+    margin: 0 auto;
+    padding: 30px;                  /* Increased padding */
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 12px;            /* More pronounced rounded corners */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Slightly bigger shadow */
+}
+
+/* Style for the h2 heading */
+.unfold-section h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* Styling the <summary> element for top-level details */
+details summary {
+    background-color: #003366;
+    color: white;
+    padding: 15px;                  /* Increased padding for larger click area */
+    font-size: 1.3em;               /* Larger font size for main summary */
+    cursor: pointer;
+    border-radius: 6px;             /* Slightly larger rounded corners */
+    outline: none;
+    margin-bottom: 10px;
+}
+
+/* Hover effect for top-level summary */
+details summary:hover {
+    background-color: #004c99;
+}
+
+/* Indented style for nested details elements inside the list */
+.unfold-section ul {
+    list-style: none;
+    padding-left: 20px;             /* Small indentation for sublist */
+}
+
+.unfold-section ul li {
+    margin-bottom: 15px;
+}
+
+/* Styling for the inner list summary */
+.unfold-section ul li details summary {
+    background-color: #0055aa;
+    padding: 12px;
+    font-size: 1.1em;               /* Larger font size for inner summary */
+    margin-bottom: 5px;
+    border-radius: 4px;
+    padding-left: 30px;             /* Increased padding to nest further right */
+}
+
+/* Hover effect for inner list summary */
+.unfold-section ul li details summary:hover {
+    background-color: #0077cc;
+}
+
+/* Style for the unfolded paragraphs */
+details p {
+    padding: 12px;
+    background-color: #e6f2ff;
+    border-radius: 6px;             /* More rounded */
+    margin-top: 5px;
+    margin-left: 20px;              /* Nested indent for content */
+}
+
+/* Smooth transition effect for opening and closing */
+details {
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* IN TEXT LINKING */
+.link-highlight {
+    text-decoration: underline;     /* Underline by default */
+    color: #003366;                 /* Dark blue color for the link */
+    cursor: pointer;                /* Change cursor to pointer */
+    transition: color 0.3s ease-in; /* Smooth transition effect on hover */
+}
+
+.link-highlight:hover {
+    color: #0077cc;                 /* Light blue color on hover */
+    text-decoration: underline;     /* Ensure underline stays on hover */
 }
