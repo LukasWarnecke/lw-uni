@@ -1,4 +1,26 @@
 /*GENERAL STYLING*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+}
+
+main
+{
+    padding: 5%;
+}
+
+.Introtext {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 .homeintro {
     text-align: center;
 }
@@ -8,10 +30,37 @@
     max-width: 80%;
 }
 
+.homehero {
+    display: flex;                   /* Enable flexbox layout */
+    justify-content: center;         /* Center horizontally */
+    align-items: center;             /* Center vertically if needed */
+    height: 100vh;                   /* Full viewport height */
+    width: 100%;                     /* Ensure the section takes full width */
+    padding: 0;                      /* Remove any padding */
+    margin: 0;                       /* Remove any margin */
+}
+
+.homehero img {
+    width: 80%;                      /* Set image width to 80% of parent */
+    height: auto;                   /* Maintain aspect ratio */
+    max-width: 100%;                /* Prevent exceeding parent width */
+    object-fit: cover;              /* Ensure the image covers the area if needed */
+}
+
 /*HEADER STYLING*/
 
+header {
+    width: 100%;
+    transition: transform 0.3s ease;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #003366;
+    color: white;
+}
+
 .navbar {
-    display: flex;                      
+    display: flex;          
     justify-content: space-between;     
     align-items: center;                
     padding: 15px 20px;                 
@@ -25,7 +74,8 @@
 }
 
 /* Navigation Menu */
-.headermenu {
+.headermenu 
+{
     list-style: none;                   
     padding: 0;                         
     margin: 0;                          
@@ -50,127 +100,8 @@
     cursor: pointer;             
 }
 
-/* FOOTER STYLING*/
-
-.footer {
-    display: flex;                        
-    padding: 20px;                      
-    background-color: #003366;        
-    color: white;                     
-    justify-content: space-between;     
-    flex-wrap: wrap;               
-}
-
-.footer > section {
-    flex: 1;                          
-    margin: 0 20px;              
-}
-
-.footer section:last-child {
-    margin-right: 0;                
-}
-
-.footer h4 {
-    font-size: 1.5em;         
-    margin-bottom: 5px;            
-}
-
-.footer p {
-    font-size: 0.8em;
-    margin: 5px 0;                  
-}
-
-.footer a {
-    color: white;                    
-    text-decoration: none;            
-    transition: color 0.3s ease; 
-    cursor: pointer;    
-}
-
-.footer a:hover {
-    text-decoration: underline;        
-    color: #ffcc00;                  
-}
-
-.footer .footermenu {
-    list-style: none;                 
-    padding: 0;                      
-    margin: 0;                        
-}
-
-.footer .footermenu li {
-    margin: 2px 0;                
-}
-
-.footer .footermenu li a {
-    display: block;                   
-}
-
-/* Copyright Notice */
-.footer p:last-of-type {
-    text-align: center;                
-    width: 100%;                     
-    margin-top: 20px;                 
-    font-size: 0.9em;                   
-    color: rgba(255, 255, 255, 0.7);  
-}
-
-.footer .footermenu {
-    list-style: none;                
-    padding: 0;                       
-    margin: 0;                      
-    display: flex;                    
-    flex-direction: column;            
-}
-
-.footer .footermenu li {
-    margin: 5px 0;                     
-}
-
-.footer .footermenu li a {
-    display: block;                  
-    padding: 5px 0;                  
-    color: white;                     
-    text-decoration: none;           
-    transition: color 0.3s ease;      
-}
-
-.footer .footermenu li a:hover {
-    text-decoration: underline;      
-    color: #ffcc00;                  
-}
-
-/* Responsive Adjustments ?*/
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: column;     
-        align-items: center;          
-    }
-    
-    .footer > section {
-        margin-bottom: 20px;          
-        margin-right: 0;                
-    }
-}
 
 /* Page 1 - Running Groups */
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    padding: 20px;
-    margin: 0;
-}
-
-.Introtext {
-    text-align: center;
-    margin-bottom: 10px;
-}
 
 /* styling of the group, competition and routes boxes */
 
@@ -318,4 +249,88 @@ details {
 .link-highlight:hover {
     color: #0077cc;                 /* Light blue color on hover */
     text-decoration: underline;     /* Ensure underline stays on hover */
+}
+
+/* FOOTER STYLING*/
+
+footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-sections {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu ul li {
+    margin-bottom: 10px;
+}
+
+footer a,
+footer a:visited,
+footer a:active,
+footer a:link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: lightgrey;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #555;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .footer-sections {
+        flex-direction: column;
+    }
+    .footer-section {
+        width: 100%;
+    }
 }
