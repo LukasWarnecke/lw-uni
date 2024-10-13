@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="icon" type="image/x-icon" href="img/faviconrocket.png">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
 </head>
 
 <body>
@@ -13,7 +14,7 @@
         <!--Insert Logo-->
         <nav class="navbar">
             <a href="P1Homepage.html">
-                <img src="logo.png" alt="Logo" class="logo">
+                <img src="img/LOGO.png" alt="Logo" class="logo">
             </a>
             <ul class="headermenu">
                 <li><a href="P1Homepage.html">Homepage</a></li>
@@ -27,29 +28,34 @@
     </header>
 
     <main>
-        <form action=
-        "process.php" method="POST">
-        <!-- 'action' attribute specifies the URL to process the form data -->
-        <!-- 'method' attribute specifies how data is sent; 'POST' is common -->
-        <label for="name">Name:</label>
-        <input type=
-        "text" id="name" name="name" placeholder=
-        "Your name" required>
-        <!-- 'label' associates with 'input’ id using 'for' attribute, 'name' for server
-        access,'required' enforces input -->
-        <label for=
-        "message">Message:</label>
-        <textarea id=
-        "message" name=
-        "message" rows="4" cols="50" placeholder=
-        "Your message">
-        </textarea>
-        <!-- 'textarea' for multi-line text input; 'rows' and 'cols' set dimensions -->
-        <input type=
-        "submit" value=
-        "Submit">
-        <!-- 'input' with 'type="submit"' creates a submit button -->
-        </form>
+        <section class="contact-form-container">
+            <h2>CONTACT PAGE</h2>
+            <form class="contact-form" action="process.php" method="POST">
+                <fieldset>
+                    <legend>Salutation:</legend>
+                    <label><input type="radio" name="salutation" value="Mr"> Mr</label>
+                    <label><input type="radio" name="salutation" value="Mrs"> Mrs</label>
+                    <label><input type="radio" name="salutation" value="Other"> Other</label>
+                </fieldset>
+                <section class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name..." required>
+                </section>
+                <section class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" placeholder="Your E-Mail..." required>
+                </section>
+                <section class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter a subject..." required>
+                </section>
+                <section class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Enter message..." required></textarea>
+                </section>
+                <button type="submit" class="submit-btn">SUBMIT</button>
+            </form>
+        </section>
 
         <section class="Introtext">
             <h2>Visit our other pages</h2>
@@ -63,9 +69,14 @@
     </main>
     
     <footer>
+        <p class="cookie-bar">This website uses cookies to ensure you get the best experience on our website. 
+            <span class="cookie-link"><a href="P1Homepage.html">Learn more</a></span>.</p>
+
         <section class="footer-content">
             <section class="footer-logo">
-                <img src="/api/placeholder/100/100" alt="Company Logo">
+                <a href="P1Homepage.html">
+                    <img src="img/LOGO.png" alt="Logo" class="logo">
+                </a>
             </section>
             <section class="footer-sections">
                 <section class="footer-section">
