@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="icon" type="image/x-icon" href="img/faviconrocket.png">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
 </head>
 
 <body>
@@ -14,7 +15,7 @@
         <!--Insert Logo-->
         <nav class="navbar">
             <a href="P1Homepage.html">
-                <img src="logo.png" alt="Logo" class="logo">
+                <img src="img/LOGO.png" alt="Logo" class="logo">
             </a>
             <ul class="headermenu">
                 <li><a href="P1Homepage.html">Homepage</a></li>
@@ -31,12 +32,16 @@
     <!--Section for Hero-Picture-->
     <!--generate picture (what size?)-->
     <section class="homehero">
-        <figure>
+        <figure class="hero-figure">
             <img 
-                src="img/home1.png",
-                alt="People running in a city in the netherlands",
-                title="Running people in the netherlands"
+                src="img/home1.png" 
+                alt="People running in a city in the Netherlands"
+                title="Running people in the Netherlands"
             />
+            <figcaption class="hero-text">
+                <h1>Haarlem Runs</h1>
+                <p>Everything about running in and around Haarlem</p>
+            </figcaption>
         </figure>
     </section>
 
@@ -44,8 +49,7 @@
     <!--Style in css-->
     <section class="homeintro">
         <h2>Welcome to HaarlemRuns!</h2>
-        <p>Discover running groups, upcoming competitions &amp; the best running routes in Haarlem.</p>
-        <p>Your go-to source for <strong>everything you need</strong> to stay active &amp; connect with the local running community.</p>
+        <p>Discover running groups, upcoming competitions &amp; the best running routes in Haarlem. Your go-to source for <strong>everything you need</strong> to stay active &amp; connect with the local running community.</p>
     </section>
 
     <!--Section for picture-->
@@ -54,8 +58,8 @@
         <figure>
             <img 
                 src="img/home2.png",
-                alt="Focused runner",
-                title="Focused runner"
+                alt="Focused runner in the middle of a run",
+                title="Focused Runner"
             />
             <figcaption class="figure-group-figcaption">
                 Running is for everyone!
@@ -71,66 +75,44 @@
 
     <!--Section to link to other sites-->
     <section class="pageinfos">
-        <section><!--link to running groups page.-->
+        <section>
             <article>
                 <h3>Running Groups</h3>
                 <p>Here you will find interesting running groups close by!</p>
             </article>
-            <figure>
-                <img />
-                <figcaption></figcaption>
-                <button></button>
-            </figure>
+            <a href="P2RunningGroups.html">
+                <button >Click here now to visit page!</button>
+            </a>
         </section>
-
-        <section><!--link to running copetition page-->
+    
+        <section>
             <article>
                 <h3>Running Competitions</h3>
-                <p>Participate in one of the upcoming running event!</p>
+                <p>Participate in one of the upcoming running events!</p>
             </article>
-            <figure>
-                <img />
-                <figcaption></figcaption>
-                <button></button>
-            </figure>
+            <a href="P3RunningCompetitions.html">
+                <button>Click here now to visit page!</button>
+            </a>
         </section>
-    </section>
     
-    <section class="pageinfos">
-        <section><!--link to running routes page-->
+        <section>
             <article>
-                <h3>Running Routes</h3>
+                <h3>Tips & Tricks</h3>
+                <p>Ready to level-up your running game? See our best tips!</p>
+            </article>
+            <a href="P5RunningTips.html">
+                <button>Click here now to visit page!</button>
+            </a>
+        </section>
+    
+        <section>
+            <article>
+                <h3>New Running Routes</h3>
                 <p>Explore new running routes in Holland!</p>
             </article>
-            <figure>
-                <img />
-                <figcaption></figcaption>
-                <button></button>
-            </figure>
-        </section>
-
-        <section><!--link to running tipps page-->
-            <article>
-                <h3>Tipps & Tricks</h3>
-                <p>Ready to level-up your running game? See our best tipps!</p>
-            </article>
-            <figure>
-                <img />
-                <figcaption></figcaption>
-                <button></button>
-            </figure>
-        </section>
-
-        <section><!--link to contact page-->
-            <article>
-                <h3>Questions or Ideas?</h3>
-                <p>Get in touch if you have further questions or ideas!</p>
-            </article>
-            <figure>
-                <img />
-                <figcaption></figcaption>
-                <button></button>
-            </figure>
+            <a href="P4RunningRoutes.html">
+                <button>Click here now to visit page!</button>
+            </a>
         </section>
     </section>
 
@@ -140,7 +122,7 @@
         <figure>
             <img 
                 src="img/home3.png",
-                alt="People that run in a competition",
+                alt="People that run in a competition together",
                 title="Running competition"
             />
             <figcaption class="figure-group-figcaption">
@@ -149,11 +131,62 @@
         </figure>
     </section>
 
-    <!--"join the movement" -> newsletter signup-->
-    <section class="homeintro">
-        <h2>Join our community!</h2>
-        <p>Get news about new running initiativs, competitions &amp; new routes.</p>
+    <!--ordered list-->
+    <section class="runner-foods-section">
+        <h2 class="runner-foods-title">Top 3 Foods for Runners</h2>
+        
+        <ol class="runner-foods-list">
+            <li class="runner-foods-item">
+                <strong class="runner-foods-name">Bananas</strong>
+                <p class="runner-foods-description">Rich in potassium, bananas help prevent muscle cramps and provide quick energy for runners.</p>
+            </li>
+            <li class="runner-foods-item">
+                <strong class="runner-foods-name">Oats</strong>
+                <p class="runner-foods-description">Oats offer complex carbohydrates for sustained energy and are high in fiber for digestive health.</p>
+            </li>
+            <li class="runner-foods-item">
+                <strong class="runner-foods-name">Salmon</strong>
+                <p class="runner-foods-description">Salmon is packed with omega-3 fatty acids, which help reduce inflammation and support heart health.</p>
+            </li>
+        </ol>
+    
+        <h3 class="runner-foods-nutrition-title">Nutritional Information</h3>
+        <table class="runner-foods-table">
+            <thead>
+                <tr>
+                    <th class="runner-foods-table-header">Food</th>
+                    <th class="runner-foods-table-header">Calories (per 100g)</th>
+                    <th class="runner-foods-table-header">Carbs (g)</th>
+                    <th class="runner-foods-table-header">Protein (g)</th>
+                    <th class="runner-foods-table-header">Fat (g)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="runner-foods-table-cell">Bananas</td>
+                    <td class="runner-foods-table-cell">89</td>
+                    <td class="runner-foods-table-cell">23</td>
+                    <td class="runner-foods-table-cell">1.1</td>
+                    <td class="runner-foods-table-cell">0.3</td>
+                </tr>
+                <tr>
+                    <td class="runner-foods-table-cell">Oats</td>
+                    <td class="runner-foods-table-cell">389</td>
+                    <td class="runner-foods-table-cell">66</td>
+                    <td class="runner-foods-table-cell">17</td>
+                    <td class="runner-foods-table-cell">7</td>
+                </tr>
+                <tr>
+                    <td class="runner-foods-table-cell">Salmon</td>
+                    <td class="runner-foods-table-cell">206</td>
+                    <td class="runner-foods-table-cell">0</td>
+                    <td class="runner-foods-table-cell">22</td>
+                    <td class="runner-foods-table-cell">13</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
+    
 
     <section class="Introtext">
         <h2>Visit our other pages</h2>
@@ -172,9 +205,14 @@
     </main>
 
     <footer>
+        <p class="cookie-bar">This website uses cookies to ensure you get the best experience on our website. 
+        <span class="cookie-link"><a href="P1Homepage.html">Learn more</a></span>.</p>
+
         <section class="footer-content">
             <section class="footer-logo">
-                <img src="/api/placeholder/100/100" alt="Company Logo">
+                <a href="P1Homepage.html">
+                    <img src="img/LOGO.png" alt="Logo" class="logo">
+                </a>
             </section>
             <section class="footer-sections">
                 <section class="footer-section">
