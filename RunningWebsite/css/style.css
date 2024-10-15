@@ -16,8 +16,8 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'Roboto', sans-serif; /* Optional: Use Roboto for headings */
-    font-weight: 700; /* Bold weight for headings */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; 
 }
 
 main
@@ -40,9 +40,9 @@ main
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Ensure it's positioned properly */
-    width: 100vw; /* Full width of the viewport */
-    height: 65vh; /* Adjusted height to 60% of the viewport height */
+    position: relative;
+    width: 100vw; 
+    height: 65vh; 
     overflow: hidden; /* Hide any overflow */
 }
 
@@ -114,8 +114,8 @@ header {
     text-decoration: none; 
     border-radius: 5px;              
     padding: 10px 15px;                
-    background-color: transparent;      /* Set default background to transparent */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Consistent easing function */
+    background-color: transparent;      
+    transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 .headermenu a:hover {
@@ -131,16 +131,16 @@ header {
 /*HERO PICTURE + TEXT */
 .hero-figure {
     position: relative;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    margin: 0; /* Remove default figure margin */
+    width: 100%;
+    height: 100%;
+    margin: 0; 
 }
 
 .hero-figure img {
     width: 100%; 
     height: 100%;
-    object-fit: cover; /* Ensure the image covers the entire area */
-    filter: brightness(50%); /* Darken the image for better text visibility */
+    object-fit: cover; 
+    filter: brightness(50%); /* Darken the image */
 }
 
 .hero-text {
@@ -154,7 +154,7 @@ header {
 }
 
 .hero-text h1 {
-    font-size: 3rem; /* Larger text for fullscreen image */
+    font-size: 3rem;
     margin-bottom: 10px;
     text-transform: uppercase;
     font-weight: bold;
@@ -173,17 +173,17 @@ header {
 .pageinfos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;  /* Center the boxes horizontally */
-    gap: 20px;  /* Space between boxes */
-    padding: 20px;  /* Optional: adds padding around the container */
+    justify-content: center;  
+    gap: 20px; 
+    padding: 20px;  /
 }
 
 .pageinfos section {
     background-color: #E0F4FF;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 0 1 45%;  /* Ensures two boxes per row, adjusts the width to 45% */
-    max-width: 500px;  /* Optional: to prevent overly large boxes */
+    flex: 0 1 45%;  
+    max-width: 500px;  
     text-align: center;
     padding: 20px;
     transition: transform 0.3s ease;
@@ -235,115 +235,115 @@ header {
 /*ORDERED LIST HOMEPAGE STYLING*/
 /* General styling for the runner foods section */
 .runner-foods-section {
-    max-width: 70%;                 /* Limit the width of the section */
-    margin: 30px auto;              /* Center the section */
-    padding: 30px;                  /* Padding around the section */
-    font-family: Arial, sans-serif;  /* Font styling */
-    background-color: #f9f9f9;      /* Background color */
-    border-radius: 12px;            /* Rounded corners */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    max-width: 70%;                 
+    margin: 30px auto;              
+    padding: 30px;                  
+    font-family: Arial, sans-serif;  
+    background-color: #f9f9f9;      
+    border-radius: 12px;           
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); 
 }
 
 /* Style for the h2 heading */
 .runner-foods-title {
-    text-align: center;             /* Center the heading */
-    color: black;                   /* Dark text color */
-    margin-bottom: 20px;            /* Bottom margin */
-    font-size: 1.8em;               /* Font size for heading */
+    text-align: center;        
+    color: black;                  
+    margin-bottom: 20px;          
+    font-size: 1.8em;            
 }
 
 /* Styling for the ordered list */
 .runner-foods-list {
-    padding-left: 20px;            /* Indent the ordered list */
-    counter-reset: item;           /* Reset the counter for custom styling */
-    list-style-type: none;         /* Remove default numbering */
+    padding-left: 20px;         
+    counter-reset: item;          
+    list-style-type: none;       
 }
 
 /* Style for each list item */
 .runner-foods-item {
-    margin-bottom: 20px;           /* Space between items */
-    position: relative;            /* Positioning context for pseudo-elements */
-    padding-left: 30px;            /* Padding for the text */
+    margin-bottom: 20px;      
+    position: relative;          
+    padding-left: 30px;       
 }
 
 /* Custom counter styling for ordered list numbers */
 .runner-foods-item::before {
-    counter-increment: item;       /* Increment the counter */
-    content: counter(item) ". ";   /* Display the counter */
-    position: absolute;            /* Position the number absolutely */
-    left: 0;                       /* Align to the left */
-    color: #0077cc;                /* Color for the list number */
-    font-weight: bold;             /* Make the number bold */
-    font-size: 1.2em;              /* Slightly larger font for the number */
+    counter-increment: item;      /*Counter of ordered list*/
+    content: counter(item) ". ";  
+    position: absolute;           
+    left: 0;                      
+    color: #0077cc;              
+    font-weight: bold;            
+    font-size: 1.2em;          
 }
 
 /* Style for the food name */
 .runner-foods-name {
-    font-size: 1.2em;              /* Font size for the food name */
-    color: #333;                   /* Dark color */
+    font-size: 1.2em;          
+    color: #333;            
 }
 
 /* Style for the description paragraph */
 .runner-foods-description {
-    font-size: 1em;                /* Font size for description */
-    color: #666;                   /* Light gray text */
-    margin: 5px 0;                /* Margin for paragraph */
+    font-size: 1em;              
+    color: #666;                 
+    margin: 5px 0;               
 }
 
 /* Nutritional information title */
 .runner-foods-nutrition-title {
-    margin-top: 30px;              /* Space above the title */
-    font-size: 1.5em;              /* Title font size */
-    color: #333;                   /* Dark text color */
+    margin-top: 30px;    
+    font-size: 1.5em;             
+    color: #333;                
 }
 
 /* Table styling */
 .runner-foods-table {
-    width: 100%;                   /* Full width of the container */
-    border-collapse: collapse;     /* Collapse borders */
-    margin-top: 20px;              /* Space above the table */
-    background-color: #fff;        /* Background color */
-    border-radius: 8px;            /* Rounded corners */
+    width: 100%;               
+    border-collapse: collapse;    
+    margin-top: 20px;            
+    background-color: #fff;      
+    border-radius: 8px;         
     overflow: hidden;               /* Ensure rounded corners work */
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for the table */
 }
 
 .runner-foods-table-header, .runner-foods-table-cell {
-    padding: 10px;                 /* Padding for table cells */
-    text-align: left;              /* Align text to the left */
-    border-bottom: 1px solid #ddd; /* Bottom border for rows */
+    padding: 10px;               
+    text-align: left;             
+    border-bottom: 1px solid #ddd; 
 }
 
 .runner-foods-table-header {
-    background-color: #0077cc;    /* Background color for header */
-    color: white;                  /* Text color for header */
-    font-weight: bold;             /* Bold text for header */
+    background-color: #0077cc;   
+    color: white;                  
+    font-weight: bold;             
 }
 
 .runner-foods-table-cell {
-    color: #333;                   /* Dark text color for cells */
+    color: #333;                  
 }
 
 .runner-foods-table-cell:hover {
-    background-color: #f1f1f1;     /* Highlight cell on hover */
+    background-color: #f1f1f1;    
 }
 
 /* Responsive design for the table */
 @media (max-width: 768px) {
     .runner-foods-section {
-        padding: 20px;             /* Less padding on smaller screens */
+        padding: 20px;           
     }
 
     .runner-foods-title {
-        font-size: 1.5em;          /* Smaller heading font size */
+        font-size: 1.5em;        
     }
 
     .runner-foods-name {
-        font-size: 1.1em;          /* Slightly smaller food name */
+        font-size: 1.1em;         
     }
 
     .runner-foods-table {
-        font-size: 0.9em;          /* Smaller font size on mobile */
+        font-size: 0.9em;          
     }
 }
 
@@ -395,12 +395,12 @@ header {
 
 /*using figure-group because if i only use figure it also effects the images on homepage. not good.*/
 .group {
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add transition for transform and box-shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
 }
 
 .group:hover {
-    transform: scale(1.02); /* Slightly enlarge the figure-group on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+    transform: scale(1.02); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
 }
 
 .figure-group img {
@@ -408,12 +408,12 @@ header {
     flex-shrink: 0;               
     max-width: 400px;           
     height: auto;  
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add transition for transform and box-shadow */       
+    transition: transform 0.2s ease, box-shadow 0.2s ease;      
 }
 
 .figure-group img:hover {
-    transform: scale(1.02); /* Slightly enlarge the figure-group on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+    transform: scale(1.02); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
 }
 
 .figure-group img {
@@ -735,31 +735,31 @@ footer a:hover {
 /*cookie bar*/
 /* Cookie Bar Styles */
 .cookie-bar {
-    position: fixed;              /* Fixed position at the bottom */
-    bottom: 20px;                /* Spacing from the bottom of the viewport */
-    left: 50%;                   /* Center the bar horizontally */
-    transform: translateX(-50%); /* Centering adjustment */
-    background-color: #A0D5E6;   /* Lighter blue color */
-    color: #333;                 /* Text color */
-    padding: 5px 15px;          /* Reduced padding for a smaller bar */
-    border-radius: 15px;         /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
-    z-index: 9999;               /* Ensure it appears above other elements */
-    font-family: 'Roboto', sans-serif; /* Font family */
-    text-align: center;          /* Center the text */
-    width: auto;                 /* Auto width for the box */
-    font-size: 0.9em;            /* Smaller font size */
+    position: fixed;              
+    bottom: 20px;                
+    left: 50%;                  
+    transform: translateX(-50%); 
+    background-color: #A0D5E6;  
+    color: #333;                 
+    padding: 5px 15px;         
+    border-radius: 15px;       
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 9999;              
+    font-family: 'Roboto', sans-serif; 
+    text-align: center;         
+    width: auto;                
+    font-size: 0.9em;         
 }
 
 /* Optional styling for the link */
 .cookie-link a {
-    color: #0077cc;              /* Link color */
-    text-decoration: underline;   /* Underline for the link */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    color: #0077cc;             
+    text-decoration: underline;  
+    transition: color 0.3s ease;
 }
 
 .cookie-link a:hover {
-    color: #0055aa;              /* Darker color on hover */
+    color: #0055aa;             
 }
 
 
