@@ -96,19 +96,33 @@ main
 
 .tippic {
     display: flex;
-    justify-content: center; /* Centers the image horizontally */
-    align-items: center; /* Centers the image vertically if container has height */
-    width: 100vw; /* Ensure the container spans the full width of the viewport */
-    margin: 0 auto; /* Center the container itself */
+    justify-content: center; 
+    align-items: center; 
+    width: 100vw; 
+    margin: 0 auto; 
 }
 
 .tippic img {
-    width: 90vw; /* Covers 90% of the viewport width */
-    border-radius: 15px; /* Adds rounded corners */
+    width: 90vw; 
+    border-radius: 15px; 
     object-fit: cover; /* Ensures the image covers the area without distortion */
 }
 
+@media (max-width: 768px) {
+    .tippic {
+        margin: 0; 
+        padding: 0 10px; 
+    }
 
+    .tippic img {
+        width: 100vw; 
+    }
+
+    .homehero img {
+        margin: 0;
+        padding: 0 10px;
+    }
+}
 
 /*HEADER STYLING*/
 
@@ -131,7 +145,6 @@ header {
     color: white;                       
 }
 
-/* Logo */
 .logo {
     float: left;
     max-height: 5em;
@@ -142,7 +155,6 @@ header {
     transform: scale(1.05);
 }
 
-/* Navigation Menu */
 .headermenu 
 {
     list-style: none;                   
@@ -173,6 +185,51 @@ header {
     cursor: pointer;             
 }
 
+.burger-menu {
+    display: none; 
+    flex-direction: column; 
+    cursor: pointer; 
+}
+
+/* Create burger lines */
+.burger-icon {
+    width: 25px; 
+    height: 3px; 
+    background: white; 
+    margin: 4px 0; 
+    transition: 0.4s; 
+}
+
+.burger-toggle {
+    display: none; /* Hide checkbox */
+}
+
+@media (max-width: 768px) {
+
+    .logo {
+        max-height: 3em;
+    }
+
+    .headermenu {
+        display: none; /* Hide menu initially on mobile */
+        flex-direction: column; 
+        position: absolute; 
+        background-color: #21618C; 
+        width: 100%; 
+        top: 60px; 
+        left: 0; /* Align to left */
+        z-index: 999; /* Ensure it overlaps content */
+    }
+
+    .burger-menu {
+        display: flex; 
+    }
+
+    /* Show menu when checkbox is checked */
+    .burger-toggle:checked + .burger-menu + .headermenu {
+        display: flex; /* Show menu */
+    }
+}
 
 
 
@@ -277,17 +334,15 @@ header {
 
 
 /* ASIDE ELEMENT */
-/* Basic styling for the content */
 .content-section {
-    display: flex; /* Aligns content-left and aside horizontally */
-    justify-content: space-between; /* Creates space between the two elements */
-    gap: 1.25rem; /* Gap between content-left and aside */
+    display: flex; 
+    justify-content: space-between; 
+    gap: 1.25rem; 
     padding: 1.25rem;
     max-width: 75rem;
     margin: 0 auto;
 }
 
-/* Styling for the text content on the left */
 .content-left {
     flex: 1; /* Takes up remaining space */
 }
@@ -302,10 +357,9 @@ header {
     line-height: 1.6;
 }
 
-/* Styling for the aside section */
 .related-content {
     flex: 0 0 300px; /* Sets a fixed width for the aside */
-    background-color: #f9f9f9; /* Light background to differentiate it */
+    background-color: #f9f9f9; 
     padding: 15px;
     border-color: #ffa000;
     border-style: solid;
@@ -339,25 +393,24 @@ header {
 
 .related-content ul li a:focus,
 .related-content ul li a:active {
-    color: #005bb5; /* Darker shade of blue for focus/active state */
-    background-color: #e6f7ff; /* Light background to highlight selection */
-    border-radius: 4px; /* Slight rounding for visual appeal */
-    outline: none; /* Removes the default outline on focus (you may want to keep it for accessibility) */
+    color: #005bb5; 
+    background-color: #e6f7ff; 
+    border-radius: 4px; 
+    outline: none; 
 }
 
 .related-content ul li a:visited {
     color: purple;
 }
 
-/* Responsive styling for mobile devices */
 @media (max-width: 768px) {
     .content-section {
-        flex-direction: column; /* Stacks elements vertically */
+        flex-direction: column; 
     }
 
     .content-left,
     .related-content {
-        flex: 1; /* Makes both elements take full width on smaller screens */
+        flex: 1; 
         margin-bottom: 20px; /* Adds space between stacked elements */
     }
 }
@@ -377,7 +430,6 @@ header {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); 
 }
 
-/* Style for the h2 heading */
 .runner-foods-title {
     text-align: center;        
     color: black;                  
@@ -385,14 +437,12 @@ header {
     font-size: 1.8em;            
 }
 
-/* Styling for the ordered list */
 .runner-foods-list {
     padding-left: 1.25rem;         
     counter-reset: item;          
     list-style-type: none;       
 }
 
-/* Style for each list item */
 .runner-foods-item {
     margin-bottom: 1.25rem;      
     position: relative;          
@@ -410,20 +460,17 @@ header {
     font-size: 1.2rem;          
 }
 
-/* Style for the food name */
 .runner-foods-name {
     font-size: 1.2rem;          
     color: #333;            
 }
 
-/* Style for the description paragraph */
 .runner-foods-description {
     font-size: 1rem;              
     color: #666;                 
     margin: 5px 0;               
 }
 
-/* Nutritional information title */
 .runner-foods-nutrition-title {
     margin-top: 30px;    
     font-size: 1.5em;             
@@ -470,7 +517,6 @@ header {
     background-color: #f1f1f1;    
 }
 
-/* Responsive design for the table */
 @media (max-width: 768px) {
     .runner-foods-section {
         padding: 1.25rem;           
@@ -488,11 +534,6 @@ header {
         font-size: 0.5em;          
     }
 }
-
-
-
-
-
 
 /* Page 1 - Running Groups */
 
@@ -574,11 +615,24 @@ header {
     margin-top: 0.625rem;
 }
 
+@media (max-width: 768px) {
+    .group {
+        flex-direction: column; 
+        align-items: center;   
+        text-align: left;   
+        max-width: 80%;
+    }
 
+    .text-content {
+        padding-right: 0;       
+        padding-bottom: 1rem;  
+    }
 
-
-
-
+    .figure-group img {
+        max-width: 100%;      
+        margin: 1rem 0;       
+    }
+}
 
 /* STYLING "DROPDOWN" RUNNING TIPS (RUNNING BENEFITS) */
 /* General styling for the section */
@@ -595,14 +649,12 @@ header {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); 
 }
 
-/* Style for the h2 heading */
 .unfold-section h2 {
     text-align: center;
     color: black;
     margin-bottom: 1.25rem;
 }
 
-/* Styling the <summary> element for top-level details */
 details summary {
     background-color: #003366;
     color: white;
@@ -614,12 +666,10 @@ details summary {
     margin-bottom: 0.625rem;
 }
 
-/* Hover effect for top-level summary */
 details summary:hover {
     background-color: #004c99;
 }
 
-/* Indented style for nested details elements inside the list */
 .unfold-section ul {
     list-style: none;
     padding-left: 1.25rem;             
@@ -629,7 +679,6 @@ details summary:hover {
     margin-bottom: 15px;
 }
 
-/* Styling for the inner list summary */
 .unfold-section ul li details summary {
     background-color: #0055aa;
     padding: 0.75rem;
@@ -643,7 +692,6 @@ details summary:hover {
     background-color: #0077cc;
 }
 
-/* Style for the unfolded paragraphs */
 details p {
     padding: 0.75rem;
     background-color: #e6f2ff;
@@ -652,7 +700,6 @@ details p {
     margin-left: 15px;              
 }
 
-/* Smooth transition effect for opening and closing */
 details {
     transition: max-height 0.3s ease-in-out;
 }
@@ -669,11 +716,6 @@ details {
     color: #0077cc;                 
     text-decoration: underline;     
 }
-
-
-
-
-
 
 
 /*CONTACT PAGE*/
@@ -755,7 +797,6 @@ details {
     background-color: #ffca28;
 }
 
-/* Mobile Responsive Styles */
 @media screen and (max-width: 480px) {
     .contact-form-container {
         margin: 0.625rem;
@@ -787,15 +828,6 @@ details {
         padding: 0.625rem;
     }
 }
-
-
-
-
-
-
-
-
-
 
 /* FOOTER STYLING*/
 
@@ -874,11 +906,32 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-    .footer-sections {
-        flex-direction: column;
+    footer {
+        padding: 0.75rem 0; 
     }
+    
+    .footer-logo {
+        margin-right: 1rem; 
+        margin-bottom: 0.75rem; 
+    }
+
+    .footer-logo img {
+        width: 12.5rem; 
+    }
+
     .footer-section {
-        width: 100%;
+        padding: 0 0.75rem; 
+        min-width: 10rem; 
+        margin-bottom: 0.75rem; 
+    }
+
+    .footer-menu ul li {
+        margin-bottom: 0.5rem; 
+    }
+
+    .footer-bottom {
+        margin-top: 0.75rem; 
+        padding-top: 0.5rem; 
     }
 }
 
@@ -910,6 +963,18 @@ footer a:hover {
 
 .cookie-link a:hover {
     color: #0055aa;             
+}
+
+@media (max-width: 768px) {
+    .cookie-bar {
+        bottom: 1.5rem;     
+        padding: 10px;          
+        font-size: 0.8em;       
+        width: 90%;               
+        left: 50%;                
+        transform: translateX(-50%); 
+        border-radius: 10px;       
+    }
 }
 
 
