@@ -68,8 +68,8 @@
     <section class="homehero">
         <figure>
             <img 
-                src="img/home2.png",
-                alt="Focused runner in the middle of a run",
+                src="img/home2.png" 
+                alt="Focused runner in the middle of a run"
                 title="Focused Runner"
             />
             <figcaption class="figure-group-figcaption">
@@ -91,9 +91,10 @@
                 <h3>Running Groups</h3>
                 <p>Here you will find interesting running groups close by!</p>
             </article>
-            <a href="P2RunningGroups.html">
-                <button >Click here now to visit page!</button>
-            </a>
+            <button type="button" onclick="window.location.href='P2RunningGroups.html'">
+                Click here now to visit page!
+            </button>
+            
         </section>
     
         <section>
@@ -101,9 +102,9 @@
                 <h3>Running Competitions</h3>
                 <p>Participate in one of the upcoming running events!</p>
             </article>
-            <a href="P3RunningCompetitions.html">
-                <button>Click here now to visit page!</button>
-            </a>
+            <button type="button" onclick="window.location.href='P3RunningCompetitions.html'">
+                Click here now to visit page!
+            </button>
         </section>
     
         <section>
@@ -111,9 +112,9 @@
                 <h3>Tips & Tricks</h3>
                 <p>Ready to level-up your running game? See our best tips!</p>
             </article>
-            <a href="P5RunningTips.html">
-                <button>Click here now to visit page!</button>
-            </a>
+            <button type="button" onclick="window.location.href='P4RunningRoutes.html'">
+                Click here now to visit page!
+            </button>
         </section>
     
         <section>
@@ -121,9 +122,9 @@
                 <h3>New Running Routes</h3>
                 <p>Explore new running routes in Holland!</p>
             </article>
-            <a href="P4RunningRoutes.html">
-                <button>Click here now to visit page!</button>
-            </a>
+            <button type="button" onclick="window.location.href='P5RunningTips.html'">
+                Click here now to visit page!
+            </button>
         </section>
     </section>
 
@@ -132,8 +133,8 @@
     <section class="homehero">
         <figure>
             <img 
-                src="img/home3.png",
-                alt="People that run in a competition together",
+                src="img/home3.png"
+                alt="People that run in a competition together"
                 title="Running competition"
             />
             <figcaption class="figure-group-figcaption">
@@ -253,8 +254,11 @@
     </main>
 
     <footer>
-        <p class="cookie-bar">This website uses cookies to ensure you get the best experience on our website. 
-        <span class="cookie-link"><a href="P1Homepage.html">Learn more</a></span>.</p>
+        <input type="checkbox" id="cookie-bar-toggle" class="cookie-toggle" aria-label="Dismiss cookie bar">
+        <label for="cookie-bar-toggle" class="cookie-bar">This website uses cookies to ensure you get the best experience on our website. 
+            <span class="cookie-link"><a href="P1Homepage.html">Learn more</a></span>.
+            <span class="cookie-dismiss">× Dismiss</span> <!-- Dismiss button -->
+        </label>
 
         <section class="footer-content">
             <section class="footer-logo">
@@ -269,12 +273,14 @@
                 </section>
                 <section class="footer-section footer-menu">
                     <h3>Menu</h3>
-                    <ul><a href="P1Homepage.html">Homepage</a></ul>
-                    <ul><a href="P2RunningGroups.html">Groups</a></ul>
-                    <ul><a href="P3RunningCompetitions.html">Competitions</a></ul>
-                    <ul><a href="P4RunningRoutes.html">New Routes</a></ul>
-                    <ul><a href="P5RunningTips.html">Tips</a></ul>
-                    <ul><a href="P6Contact.html">Contact</a></ul>
+                    <ul>
+                        <li><a href="P1Homepage.html">Homepage</a></li>
+                        <li><a href="P2RunningGroups.html">Groups</a></li>
+                        <li><a href="P3RunningCompetitions.html">Competitions</a></li>
+                        <li><a href="P4RunningRoutes.html">New Routes</a></li>
+                        <li><a href="P5RunningTips.html">Tips</a></li>
+                        <li><a href="P6Contact.html">Contact</a></li>
+                    </ul>
                 </section>
                 <section class="footer-section">
                     <h3>Contact</h3>
