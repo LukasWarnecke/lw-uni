@@ -935,16 +935,17 @@ footer a:hover {
     }
 }
 
-/*cookie bar*/
+
+
 /* Cookie Bar Styles */
 .cookie-bar {
     position: fixed;              
     bottom: 3.125rem;                
     left: 50%;                  
-    transform: translateX(-50%); /* moves it to center */
+    transform: translateX(-50%); /* centers the bar */
     background-color: #A0D5E6;  
     color: #333;                 
-    padding: 5px 15px;         
+    padding: 10px 15px;         
     border-radius: 15px;       
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     z-index: 9999;              
@@ -952,9 +953,12 @@ footer a:hover {
     text-align: center;         
     width: auto;                
     font-size: 0.9em;         
+    display: flex; /* use flex for alignment */
+    justify-content: space-between; /* space between text and button */
+    align-items: center; /* center items vertically */
 }
 
-/* styling for the link */
+/* Styling for the link */
 .cookie-link a {
     color: #0077cc;             
     text-decoration: underline;  
@@ -965,9 +969,36 @@ footer a:hover {
     color: #0055aa;             
 }
 
+/* Dismiss Button Styles */
+.cookie-dismiss {
+    background-color: #F1C40F; /* button background */
+    color: #333; /* button text color */
+    border: none; /* remove default border */
+    border-radius: 5px; /* rounded corners */
+    padding: 5px 10px; /* padding for the button */
+    cursor: pointer; /* pointer cursor on hover */
+    margin-left: 15px; /* space between text and button */
+    font-weight: bold; /* bold text */
+    transition: background-color 0.3s ease; /* smooth transition */
+}
+
+.cookie-dismiss:hover {
+    background-color: #FFD700; /* change color on hover */
+}
+
+/* Hide the cookie bar when the checkbox is checked */
+.cookie-toggle {
+    display: none; /* hide checkbox */
+}
+
+.cookie-toggle:checked + .cookie-bar {
+    display: none; /* hides the cookie bar */
+}
+
+/* Media Query for Mobile */
 @media (max-width: 768px) {
     .cookie-bar {
-        bottom: 1.5rem;     
+        bottom: 3.5rem;     
         padding: 10px;          
         font-size: 0.8em;       
         width: 90%;               
