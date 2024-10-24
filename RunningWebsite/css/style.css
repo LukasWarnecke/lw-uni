@@ -1,3 +1,10 @@
+/*
+since i did not know how to structure a css i just made element by element.
+I am not sure if that is good practice and also, if the mobile responsivness should be one big media querie
+or  the way i did it. I found it more appealing to do it than as well segment by segment since i did the
+same for the dekstop styling
+*/
+
 /*GENERAL STYLING*/
 * {
     box-sizing: border-box;
